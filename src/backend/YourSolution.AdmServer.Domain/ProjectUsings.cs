@@ -1,0 +1,1 @@
+global using CsvIgnore = CsvHelper.Configuration.Attributes.IgnoreAttribute;

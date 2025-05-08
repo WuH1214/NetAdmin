@@ -233,5 +233,26 @@
     "Sort": 99,
     "Title": "FreeSql",
     "Type": 3,
+  },
+  // ------------------------------  业务管理 ------------------------------
+  {
+    "Icon": "sc-icon-Exception",
+    "Id": 673604276756485,
+    "Name": "biz",
+    "Path": "/biz",
+    "Sort": 100,
+    "Title": "业务管理",
+    "Type": 1
+  },
+  {
+    "Component": "biz/girl",
+    "Icon": "el-icon-sugar",
+    "Id": 673217824940037,
+    "Name": "biz/girl",
+    "ParentId": 673604276756485,
+    "Path": "/biz/girl",
+    "Sort": 95,
+    "Title": "女朋友管理",
+    "Type": 1
   }
 ]
