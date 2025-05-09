@@ -125,7 +125,7 @@ export default {
     inject: ['reload'],
     methods: {
         async getStatistics() {
-            this.statistics.total = this.$refs.table?.total
+            this.statistics.total = this.$refs.table?.total.toString()
         },
         async copyRole(row) {
             const loading = this.$loading()
@@ -135,7 +135,7 @@ export default {
         },
         //重置
         onReset() {
-            // Object.entries(this.$refs.selectFilter.selected).forEach(([key, _]) => (this.$refs.selectFilter.selected[key] = ['']))
+             // Object.entries(this.$refs.selectFilter.selected).forEach(([key, _]) => (this.$refs.selectFilter.selected[key] = ['']))
 
         },
         //搜索
@@ -154,9 +154,7 @@ export default {
                     value: form.dy.Name,
                 })
             }
-            console.log(this.query.dynamicFilter)
             await this.$refs.table.upData()
-            console.log('222222222')
         },
     },
     async mounted() {
